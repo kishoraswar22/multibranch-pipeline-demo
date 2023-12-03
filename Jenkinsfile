@@ -1,10 +1,7 @@
 pipeline {
 
     agent {
-        node {
-            label 'master'
-        }
-    }
+        node any
 
     options {
         buildDiscarder logRotator( 
